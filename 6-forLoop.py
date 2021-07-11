@@ -17,4 +17,4 @@ sum = 0
 prices = [10,20, 30]
 for item in prices:
     sum += item
-print(sum)
+print(f'Total Cost = {sum}')
