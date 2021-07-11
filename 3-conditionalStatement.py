@@ -21,3 +21,13 @@ elif has_high_income or has_good_credits:
     print(f'Down Payment =  ${0.2 * price_of_house}')
 else:
     print(f'Down Payment =  ${0.2 * price_of_house}')
+
+name = "Augustine"
+lengthOfName = len(name)
+
+if lengthOfName < 3:
+    print('Name must be at least 3 characters long')
+elif lengthOfName >= 50:
+    print('Name is too long')
+else:
+    print(f'{name} is a valid name')
