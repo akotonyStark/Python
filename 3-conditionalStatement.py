@@ -13,8 +13,9 @@ print('Enjoy your day')
 price_of_house = 1000000
 has_good_credits = True
 has_high_income = True
+has_criminal_record = True
 
-if has_high_income and has_good_credits:
+if has_high_income and has_good_credits and not has_criminal_record:
     print('Down Payment = $', 0.1 * price_of_house)
 elif has_high_income or has_good_credits:
     print(f'Down Payment =  ${0.2 * price_of_house}')
