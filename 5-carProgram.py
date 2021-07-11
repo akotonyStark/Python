@@ -1,11 +1,21 @@
 command = ""
+started = False
 
 while True:
     command = input('>').lower()
     if command == 'start':
-        print('Car has started')
+        if started:
+            print('Car has already started!')
+        else:
+            print('Car has started')
+            started = True
     elif command == 'stop':
-        print('car has stopped')
+        if not started:
+            print('car has already been stopped!')
+        else:
+            started = False
+            print('car has stopped')
+
     elif command == 'help':
         print("""
               start - to start the car
