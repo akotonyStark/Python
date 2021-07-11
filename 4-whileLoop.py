@@ -12,3 +12,7 @@ while count < guess_limit:
     count += 1
     if number == secret_number:
         print('You won!!!')
+        break
+# while loops can optionally have an else block
+else:
+    print('Game over')
