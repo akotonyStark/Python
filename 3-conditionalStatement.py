@@ -1,6 +1,5 @@
 is_hot = False
 is_cold = False
-
 if is_hot:
     print('The weather is hot')
     print('Drink plenty of water')
@@ -17,5 +16,7 @@ has_high_income = True
 
 if has_high_income and has_good_credits:
     print('Down Payment = $', 0.1 * price_of_house)
+elif has_high_income or has_good_credits:
+    print(f'Down Payment =  ${0.2 * price_of_house}')
 else:
     print(f'Down Payment =  ${0.2 * price_of_house}')
